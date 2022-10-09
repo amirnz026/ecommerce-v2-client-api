@@ -1,13 +1,38 @@
-import Home from "./pages/Home";
-import React from "react";
-import ProductList from "./pages/ProductList";
-import Product from "./pages/Product";
-import Register from "./pages/Register";
-import Login from "./pages/Login";
-import Cart from "./pages/Cart";
+import { Routes, Route, useNavigate } from "react-router-dom";
 
-function App() {
-  return <Home />;
+export default function App() {
+  const navigate = useNavigate();
+
+  const navigateToContacts = () => {
+    // 👇️ navigate to /contacts
+    navigate("/contacts");
+  };
+
+  const navigateHome = () => {
+    // 👇️ navigate to /
+    navigate("/");
+  };
+
+  return (
+    <div>
+      <div>
+        <button onClick={navigateHome}>Home</button>
+        <hr />
+        <button onClick={navigateToContacts}>Contacts</button>
+
+        <Routes>
+          <Route path="/contacts" element={<Contacts />} />
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </div>
+    </div>
+  );
 }
 
-export default App;
+function Home() {
+  return <h2>Home</h2>;
+}
+
+function Contacts() {
+  return <h2>Contacts</h2>;
+}

@@ -1,4 +1,3 @@
-const { RestartAlt } = require("@mui/icons-material");
 const User = require("../models/User");
 const {
   verifyToken,
