@@ -5,7 +5,15 @@ const Navbar = () => {
     <>
       <nav>
         <ul>
-          <li>kir</li>
+          <li>
+            <img
+              src="https://i.postimg.cc/SKmhQgk8/logo.png"
+              alt="shoply-logo"
+            />
+          </li>
+          <li>جستجو</li>
+          <li>ورود | ثبت نام</li>
+          <li>سبد</li>
         </ul>
       </nav>
     </>
