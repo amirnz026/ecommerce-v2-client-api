@@ -51,8 +51,9 @@ const Center = styled.div`
   text-align: center;
 `;
 
-const Logo = styled.h1`
+const Logo = styled.img`
   font-weight: bold;
+  width: 100px;
   ${mobile({ fontSize: "24px" })}
 `;
 
@@ -85,7 +86,7 @@ const Navbar = () => {
           </SearchContainer>
         </Left>
         <Center>
-          <Logo>LAMA.</Logo>
+          <Logo src="https://i.postimg.cc/SKmhQgk8/logo.png"></Logo>
         </Center>
         <Right>
           <MenuItem>REGISTER</MenuItem>
