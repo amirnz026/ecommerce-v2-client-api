@@ -149,18 +149,18 @@ const Cart = () => {
   const onToken = (token) => {
     setZarinPalToken(token);
   };
-  useEffect(() => {
-    const makeRequest = async () => {
-      try {
-        const res = await userRequest.post("/checkout/payment", {
-          tokenId: zarinPalToken,
-          amount: cart.total * 100,
-        });
-        navigate.push("/success", { data: res.data });
-      } catch {}
-    };
-    makeRequest();
-  }, [zarinPalToken, cart.total, navigate]);
+  // useEffect(() => {
+  //   const makeRequest = async () => {
+  //     try {
+  //       const res = await userRequest.post("/checkout/payment", {
+  //         tokenId: zarinPalToken,
+  //         amount: cart.total * 100,
+  //       });
+  //       navigate.push("/success", { data: res.data });
+  //     } catch {}
+  //   };
+  //   makeRequest();
+  // }, [zarinPalToken, cart.total, navigate]);
   return (
     <Container>
       <Navbar />
