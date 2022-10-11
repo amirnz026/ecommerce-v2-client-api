@@ -1,4 +1,5 @@
 import React from "react";
+<<<<<<< Updated upstream
 import styled from "styled-components";
 import SearchIcon from "@mui/icons-material/Search";
 import { Badge } from "@mui/material";
@@ -102,6 +103,11 @@ const Navbar = () => {
       </Wrapper>
     </Container>
   );
+=======
+
+const Navbar = () => {
+  return <></>;
+>>>>>>> Stashed changes
 };
 
 export default Navbar;
