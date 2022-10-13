@@ -8,6 +8,9 @@ import {
   AiOutlineTablet,
   AiOutlineCamera,
   AiOutlineCaretLeft,
+  AiOutlineFire,
+  AiOutlineQuestionCircle,
+  AiOutlineExclamationCircle,
 } from "react-icons/ai";
 import { RiGamepadLine } from "react-icons/ri";
 import { RiHeadphoneLine } from "react-icons/ri";
@@ -21,6 +24,8 @@ import {
   headsetBrands,
   cameraBrands,
 } from "../dataV2";
+
+import { FiMapPin } from "react-icons/fi";
 
 // lightPrimaryColor = "#6200EE";
 // primaryColor = "#3700B3";
@@ -224,11 +229,51 @@ const Dropdown = () => {
         </ul>
       </div>
       {/* Q&A */}
-      <div>
-        <p>سوالی دارید؟</p>
-      </div>
     </div>
   );
 };
 
-export default Dropdown;
+const NavItems = () => {
+  return (
+    <ul className={`ms-3 flex items-center gap-5 text-gray-500`}>
+      <span>|</span>
+      <li className="flex items-center gap-2 ">
+        <AiOutlineExclamationCircle className="text-gray-500 cursor-pointer" />
+        <p className="cursor-pointer">تازه‌ها</p>
+      </li>
+      <li className="flex items-center gap-2 ">
+        <AiOutlineFire className="text-gray-500 cursor-pointer" />
+
+        <p className="cursor-pointer">پرفروشترین‌ها</p>
+      </li>
+      <li className="flex items-center gap-2 ">
+        <AiOutlineQuestionCircle className="text-gray-500 cursor-pointer" />
+
+        <p className="cursor-pointer">سوالی دارید؟</p>
+      </li>
+    </ul>
+  );
+};
+
+const ChooseCity = () => {
+  return (
+    <div className="flex items-center gap-2">
+      <FiMapPin className="text-gray-500" />
+      <p className="me-3">لطفا شهر خود را انتخاب کنید </p>
+    </div>
+  );
+};
+
+const SecondNavbar = () => {
+  return (
+    <div className="flex items-center justify-between">
+      <div className="flex">
+        <Dropdown />
+        <NavItems />
+      </div>
+      <ChooseCity />
+    </div>
+  );
+};
+
+export default SecondNavbar;

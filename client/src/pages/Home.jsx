@@ -6,14 +6,14 @@ import Navbar from "../components/Navbar";
 import Newsletter from "../components/Newsletter";
 import Products from "../components/Products";
 import Slider from "../components/Slider";
-import Dropdown from "../components/Dropdown";
+import SecondNavbar from "../components/SecondNavbar";
 
 const Home = () => {
   return (
     <div>
       {/* <Announcement /> */}
       <Navbar />
-      <Dropdown />
+      <SecondNavbar />
       {/* <Slider />
       <Categories />
       <Products />

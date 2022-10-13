@@ -41,3 +41,5 @@ export const headsetBrands = [
 ];
 
 export const cameraBrands = ["کنون", "نیکون", "سونی", "پاناسونیک", "پنتاکس"];
+
+export const navItems = ["تازه‌ها", "پرفروشترین‌ها", "سوالی دارید؟"];
