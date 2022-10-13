@@ -6,17 +6,19 @@ import Navbar from "../components/Navbar";
 import Newsletter from "../components/Newsletter";
 import Products from "../components/Products";
 import Slider from "../components/Slider";
+import Dropdown from "../components/Dropdown";
 
 const Home = () => {
   return (
     <div>
       {/* <Announcement /> */}
       <Navbar />
-      <Slider />
+      <Dropdown />
+      {/* <Slider />
       <Categories />
       <Products />
       <Newsletter />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 };
