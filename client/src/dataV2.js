@@ -44,6 +44,16 @@ export const cameraBrands = ["کنون", "نیکون", "سونی", "پاناسو
 
 export const navItems = ["تازه‌ها", "پرفروشترین‌ها", "سوالی دارید؟"];
 
+export const brands = [
+  { brand: "سامسونگ", imgUrl: "https://i.postimg.cc/9FvfZGnB/samsung.webp" },
+  { brand: "اپل", imgUrl: "https://i.postimg.cc/26zy3rKR/apple.webp" },
+  { brand: "هواوی", imgUrl: "https://i.postimg.cc/66bq5sVg/huawei.webp" },
+  { brand: "نوکیا", imgUrl: "https://i.postimg.cc/c4KHvDXH/nokia.webp" },
+  { brand: "شیائومی", imgUrl: "https://i.postimg.cc/P5Y54CGn/xiaomi.webp" },
+  { brand: "وان پلاس", imgUrl: "https://i.postimg.cc/q7rMZp0h/one-plus.webp" },
+  { brand: "جی پلاس", imgUrl: "https://i.postimg.cc/NFnjNTfB/g-plug.webp" },
+];
+
 export const products = [
   {
     productIconUrl: "https://i.postimg.cc/Yq6H5hzq/product-1.webp",

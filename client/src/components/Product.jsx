@@ -4,14 +4,16 @@ import { AiFillStar } from "react-icons/ai";
 import { TbTruckDelivery } from "react-icons/tb";
 
 const Product = (props) => {
-  console.log("kri kahr");
   return (
     <div className="flex flex-col  justify-center cursor-pointer relative">
-      <img
-        src={props.productIconUrl}
-        alt={props.englishTitle}
-        className="bg-gray-100 rounded-2xl px-[75px] py-[20px]"
-      />
+      <div className="bg-gray-100 ">
+        <img
+          src={props.productIconUrl}
+          alt={props.englishTitle}
+          className="rounded-2xl px-[75px] py-[20px] transition-all duration-300 transform hover:scale-[1.08] ease "
+        />
+      </div>
+
       <p className="twoLinesText text-sm my-2 leading-7">{props.productName}</p>
       {props.off && (
         <div>
