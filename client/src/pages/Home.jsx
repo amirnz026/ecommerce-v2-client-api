@@ -18,9 +18,7 @@ const Home = () => {
       {/* <SecondNavbar /> */}
       {/* <HeaderSlider /> */}
       {/* <Slider /> */}
-      {/* <div className="mt-5">*/}
       {/* <ReactSlider /> */}
-      {/* </div> */}
       {/* <Categories /> */}
       <SpecialOffer />
       {/* <Products /> */}
