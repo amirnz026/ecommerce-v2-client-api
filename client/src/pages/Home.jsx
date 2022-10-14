@@ -9,21 +9,23 @@ import Slider from "../components/Slider";
 import SecondNavbar from "../components/SecondNavbar";
 import HeaderSlider from "../components/HeaderSlider";
 import ReactSlider from "../components/ReactSlider";
+import SpecialOffer from "../components/SpecialOffer";
 const Home = () => {
   return (
     <div>
       {/* <Announcement /> */}
-      <Navbar />
-      <SecondNavbar />
+      {/* <Navbar /> */}
+      {/* <SecondNavbar /> */}
       {/* <HeaderSlider /> */}
       {/* <Slider /> */}
-      <div className="mt-5">
-        <ReactSlider />
-      </div>
-      {/* <Categories />
-      <Products />
-      <Newsletter />
-      <Footer /> */}
+      {/* <div className="mt-5">*/}
+      {/* <ReactSlider /> */}
+      {/* </div> */}
+      {/* <Categories /> */}
+      <SpecialOffer />
+      {/* <Products /> */}
+      {/* <Newsletter /> */}
+      {/*<Footer /> */}
     </div>
   );
 };
