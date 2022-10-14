@@ -1,6 +1,9 @@
 import React from "react";
 import { useTimer } from "react-timer-hook";
 import { FaPercentage } from "react-icons/fa";
+import Product from "./Product";
+import { products } from "../dataV2";
+import SecondNavbar from "./SecondNavbar";
 
 // lightPrimaryColor = "#6200EE";
 // primaryColor = "#3700B3";
@@ -8,12 +11,43 @@ import { FaPercentage } from "react-icons/fa";
 
 const SpecialOffer = () => {
   return (
-    <div className="flex items-center gap-3 justify-between bg-[#03DAC5] rounded-xl text-gray-50">
-      <div className="flex items-center gap-2">
-        <FaPercentage className="mt-2" />
-        <p>پیشنهاد ویژه شاپلی</p>
+    <div>
+      <div className="flex items-center gap-3 justify-between bg-[#03DAC5] rounded-xl text-gray-50">
+        <div className="flex items-center gap-2">
+          <FaPercentage className="mt-2" />
+          <p>پیشنهاد ویژه شاپلی</p>
+        </div>
+        <Timer />
       </div>
-      <Timer />
+      <div className="flex flex-col md:flex-row gap-10">
+        {products.map((product) => (
+          <Product
+            productIconUrl={product.productIconUrl}
+            englishTitle={product.englishTitle}
+            productName={product.productName}
+            price={product.price}
+            score={product.score}
+            comments={product.comments}
+            off={product.off}
+            fastDeliver={product.fastDeliver}
+            offPercent={product.offPercent}
+            colors={product.colors}
+            offPrice={product.offPrice}
+          />
+        ))}
+      </div>
+      <div className="flex justify-center gap-5">
+        <img
+          src="https://i.postimg.cc/Fz5HwQvJ/image-8.jpg"
+          alt="samsung watch"
+          className="rounded-2xl cursor-pointer"
+        />
+        <img
+          src="https://i.postimg.cc/XYH7453W/image-9.jpg"
+          alt="huawei accessories"
+          className="rounded-2xl cursor-pointer"
+        />
+      </div>
     </div>
   );
 };
