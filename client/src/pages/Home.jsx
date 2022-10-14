@@ -11,6 +11,7 @@ import HeaderSlider from "../components/HeaderSlider";
 import ReactSlider from "../components/ReactSlider";
 import SpecialOffer from "../components/SpecialOffer";
 import Product from "../components/Product";
+import Popular from "../components/Popular";
 const Home = () => {
   return (
     <div>
@@ -21,7 +22,8 @@ const Home = () => {
       {/* <Slider /> */}
       {/* <ReactSlider /> */}
       {/* <Categories /> */}
-      <SpecialOffer />
+      {/* <SpecialOffer /> */}
+      <Popular />
       {/* <Product /> */}
       {/* <Products /> */}
       {/* <Newsletter /> */}
