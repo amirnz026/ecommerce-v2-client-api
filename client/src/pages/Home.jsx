@@ -10,6 +10,7 @@ import SecondNavbar from "../components/SecondNavbar";
 import HeaderSlider from "../components/HeaderSlider";
 import ReactSlider from "../components/ReactSlider";
 import SpecialOffer from "../components/SpecialOffer";
+import Product from "../components/Product";
 const Home = () => {
   return (
     <div>
@@ -21,6 +22,7 @@ const Home = () => {
       {/* <ReactSlider /> */}
       {/* <Categories /> */}
       <SpecialOffer />
+      {/* <Product /> */}
       {/* <Products /> */}
       {/* <Newsletter /> */}
       {/*<Footer /> */}
