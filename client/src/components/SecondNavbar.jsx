@@ -125,7 +125,7 @@ const Dropdown = () => {
   };
 
   return (
-    <div className="relative ms-2">
+    <div className="relative ms-2 ">
       {/* Categories Button */}
       <a
         href="#_"
@@ -150,7 +150,7 @@ const Dropdown = () => {
 
       {/* Categories Dropdown */}
       <div
-        className={`flex pt-2 rounded-lg h-[20rem] w-[28rem] absolute start-0  shadow-lg shadow-gray-200 ${
+        className={`flex pt-2 rounded-md h-[20rem] w-[28rem] absolute start-0  shadow-lg shadow-gray-300 z-10 bg-white ${
           isCatBtnHover
             ? "opacity-1 pointer-events-auto"
             : "opacity-0 pointer-events-none"
@@ -159,7 +159,7 @@ const Dropdown = () => {
         onMouseLeave={() => setIsCatBtnHover(false)}
       >
         {/* Right side */}
-        <ul className="font-semibold text-gray-900 bg-gray-100">
+        <ul className="font-semibold text-gray-900 bg-gray-100 z-10 ">
           <CategoryTitle
             icon={<AiOutlineMobile />}
             title="موبایل"
@@ -193,7 +193,7 @@ const Dropdown = () => {
         </ul>
 
         {/* Left side */}
-        <ul className="ms-6">
+        <ul className="ms-6 ">
           <li className="font-regular text-gray-600 mb-4 cursor-pointer">
             {isMobileHover && (
               <div className="flex items-center">

@@ -7,15 +7,20 @@ import Newsletter from "../components/Newsletter";
 import Products from "../components/Products";
 import Slider from "../components/Slider";
 import SecondNavbar from "../components/SecondNavbar";
-
+import HeaderSlider from "../components/HeaderSlider";
+import ReactSlider from "../components/ReactSlider";
 const Home = () => {
   return (
     <div>
       {/* <Announcement /> */}
       <Navbar />
       <SecondNavbar />
-      {/* <Slider />
-      <Categories />
+      {/* <HeaderSlider /> */}
+      {/* <Slider /> */}
+      <div className="mt-5">
+        <ReactSlider />
+      </div>
+      {/* <Categories />
       <Products />
       <Newsletter />
       <Footer /> */}
