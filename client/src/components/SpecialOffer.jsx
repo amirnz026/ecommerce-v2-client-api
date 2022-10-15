@@ -4,6 +4,7 @@ import { FaPercentage } from "react-icons/fa";
 import Product from "./Product";
 import { products } from "../dataV2";
 import SecondNavbar from "./SecondNavbar";
+import ProductsRow from "./ProductsRow";
 
 // lightPrimaryColor = "#6200EE";
 // primaryColor = "#3700B3";
@@ -21,33 +22,17 @@ const SpecialOffer = () => {
           <Timer />
         </div>
       </div>
-      <div className="flex flex-col md:flex-row gap-10">
-        {products.map((product) => (
-          <Product
-            productIconUrl={product.productIconUrl}
-            englishTitle={product.englishTitle}
-            productName={product.productName}
-            price={product.price}
-            score={product.score}
-            comments={product.comments}
-            off={product.off}
-            fastDeliver={product.fastDeliver}
-            offPercent={product.offPercent}
-            colors={product.colors}
-            offPrice={product.offPrice}
-          />
-        ))}
-      </div>
-      <div className="flex justify-center gap-5">
+      <ProductsRow data={products} />
+      <div className="flex justify-around">
         <img
           src="https://i.postimg.cc/Fz5HwQvJ/image-8.jpg"
           alt="samsung watch"
-          className="rounded-2xl cursor-pointer"
+          className="rounded-2xl cursor-pointer w-[45%]"
         />
         <img
           src="https://i.postimg.cc/XYH7453W/image-9.jpg"
           alt="huawei accessories"
-          className="rounded-2xl cursor-pointer"
+          className="rounded-2xl cursor-pointer w-[45%]"
         />
       </div>
     </div>

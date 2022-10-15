@@ -20,8 +20,10 @@ const headerCategories = [
   "ساعت هوشمند",
 ];
 
-const imgClass = "bg-gray-100 rounded-xl w-10 scale-150 mb-4";
-const listClass = "flex flex-col items-center font-semibold text-gray-600";
+const imgClass =
+  "bg-gray-100 rounded-xl w-10 scale-[2] mb-7 mt-3 cursor-pointer";
+const listClass =
+  "flex flex-col items-center font-semibold text-gray-600 cursor-pointer";
 
 const Categories = () => {
   return (

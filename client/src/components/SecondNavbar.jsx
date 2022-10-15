@@ -125,7 +125,7 @@ const Dropdown = () => {
   };
 
   return (
-    <div className="relative ms-2 ">
+    <div className="relative ms-2">
       {/* Categories Button */}
       <a
         href="#_"
@@ -202,11 +202,36 @@ const Dropdown = () => {
               </div>
             )}
 
-            {isLaptopHover && <p>همه محصولات لپتاپ</p>}
-            {isTabletHover && <p>همه محصولات تبلت</p>}
-            {isConsoleHover && <p>همه محصولات کنسول بازی</p>}
-            {isHeadsetHover && <p>همه محصولات هدفون و هندزفری</p>}
-            {isCameraHover && <p>همه محصولات دوربین</p>}
+            {isLaptopHover && (
+              <div className="flex items-center">
+                <p>همه محصولات لپتاپ</p>
+                <AiOutlineCaretLeft className="text-[#6200EE]" />
+              </div>
+            )}
+            {isTabletHover && (
+              <div className="flex items-center">
+                <p>همه محصولات تبلت</p>
+                <AiOutlineCaretLeft className="text-[#6200EE]" />
+              </div>
+            )}
+            {isConsoleHover && (
+              <div className="flex items-center">
+                <p>همه محصولات کنسول بازی</p>
+                <AiOutlineCaretLeft className="text-[#6200EE]" />
+              </div>
+            )}
+            {isHeadsetHover && (
+              <div className="flex items-center">
+                <p>همه محصولات هدفون و هندزفری</p>
+                <AiOutlineCaretLeft className="text-[#6200EE]" />
+              </div>
+            )}
+            {isCameraHover && (
+              <div className="flex items-center">
+                <p>همه محصولات دوربین</p>
+                <AiOutlineCaretLeft className="text-[#6200EE]" />
+              </div>
+            )}
           </li>
           <li className="font-regular text-gray-700 flex flex-row-reverse items-center mb-3 cursor-pointer">
             {isMobileHover && <p>برندهای مختلف گوشی موبایل</p>}
@@ -219,7 +244,7 @@ const Dropdown = () => {
           </li>
 
           {/* Mobile brands */}
-          <div>
+          <div className="flex flex-col items-start">
             {brands.map((brand) => {
               return (
                 <li className="mb-2 text-gray-500 cursor-pointer">{brand}</li>

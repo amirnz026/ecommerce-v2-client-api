@@ -6,6 +6,7 @@ import loginIcon from "../images/login.png";
 import { BiLogIn } from "react-icons/bi";
 import { FiShoppingCart } from "react-icons/fi";
 import { BsSearch } from "react-icons/bs";
+import "../index.css";
 
 const logoIcon = "https://i.postimg.cc/g0n5zwvL/logo.png";
 
@@ -13,7 +14,7 @@ const Navbar = () => {
   return (
     <>
       {/* Navbar */}
-      <nav className="pt-5 mb-5">
+      <nav className="pt-2 mb-1 shadow-md">
         <ul className="flex gap-5 items-center justify-evenly list-none p-0 m-0 ms-1 ">
           {/* Logo */}
           <li className="flex-[1] ">

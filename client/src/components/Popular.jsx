@@ -4,119 +4,43 @@ import Product from "./Product";
 import { products, brands, news } from "../dataV2";
 import Brand from "./Brand";
 import NewsItem from "./NewsItem";
+import ProductsRow from "./ProductsRow";
+import Divider from "./Divider";
 
 const Popular = () => {
   return (
     <div>
-      <div className="flex justify-between items-center bg-gray-100 rounded-xl px-5 py-3 font-semibold text-lg mb-5">
-        <p>پربازدیدترین ها</p>
-        <div className="flex items-center">
-          <p>مشاهده همه</p>
-          <BiChevronLeft />
-        </div>
-      </div>
-      <div className="flex flex-col md:flex-row gap-10 mb-12">
-        {products.map((product) => (
-          <Product
-            productIconUrl={product.productIconUrl}
-            englishTitle={product.englishTitle}
-            productName={product.productName}
-            price={product.price}
-            score={product.score}
-            comments={product.comments}
-            off={product.off}
-            fastDeliver={product.fastDeliver}
-            offPercent={product.offPercent}
-            colors={product.colors}
-            offPrice={product.offPrice}
-          />
-        ))}
-      </div>
+      <Divider title="پربازدیدترین ها" />
+      <ProductsRow data={products} />
       <div className="flex gap-9 ">
         {brands.map((brand) => (
           <Brand imgUrl={brand.imgUrl} brand={brand.brand} />
         ))}
       </div>
-      <div className="flex justify-between items-center bg-gray-100 rounded-xl px-5 py-3 font-semibold text-lg mt-12 mb-6">
-        <p>پرفروشترین ها</p>
-        <div className="flex items-center">
-          <p>مشاهده همه</p>
-          <BiChevronLeft />
-        </div>
+      <div className="mt-10">
+        <Divider title="پرفروشترین ها" />
       </div>
-      <div className="flex flex-col md:flex-row gap-10 ">
-        {products.map((product) => (
-          <Product
-            productIconUrl={product.productIconUrl}
-            englishTitle={product.englishTitle}
-            productName={product.productName}
-            price={product.price}
-            score={product.score}
-            comments={product.comments}
-            off={product.off}
-            fastDeliver={product.fastDeliver}
-            offPercent={product.offPercent}
-            colors={product.colors}
-            offPrice={product.offPrice}
-          />
-        ))}
-      </div>
-      <div className="flex justify-center items-center">
+
+      <ProductsRow data={products} />
+
+      <div className="flex justify-center items-center cursor-pointer">
         <img
           src="https://i.postimg.cc/q7MMT0DN/image-10.jpg"
           alt="gamers"
-          className="mt-10 rounded-2xl"
+          className="mt-10 rounded-2xl w-full"
         />
       </div>
-      <div className="flex justify-between items-center bg-gray-100 rounded-xl px-5 py-3 font-semibold text-lg mt-12 mb-5">
-        <p>لوازم جانبی موبایل</p>
-        <div className="flex items-center">
-          <p>مشاهده همه</p>
-          <BiChevronLeft />
-        </div>
+      <div className="mt-5">
+        <Divider title="لوازم جانبی موبایل" />
       </div>
-      <div className="flex flex-col md:flex-row gap-10 ">
-        {products.map((product) => (
-          <Product
-            productIconUrl={product.productIconUrl}
-            englishTitle={product.englishTitle}
-            productName={product.productName}
-            price={product.price}
-            score={product.score}
-            comments={product.comments}
-            off={product.off}
-            fastDeliver={product.fastDeliver}
-            offPercent={product.offPercent}
-            colors={product.colors}
-            offPrice={product.offPrice}
-          />
-        ))}
-      </div>
-      <div className="flex justify-between items-center bg-gray-100 rounded-xl px-5 py-3 font-semibold text-lg mt-12 mb-5">
-        <p>گوشی موبایل</p>
-        <div className="flex items-center">
-          <p>مشاهده همه</p>
-          <BiChevronLeft />
-        </div>
-      </div>
-      <div className="flex flex-col md:flex-row gap-10 ">
-        {products.map((product) => (
-          <Product
-            productIconUrl={product.productIconUrl}
-            englishTitle={product.englishTitle}
-            productName={product.productName}
-            price={product.price}
-            score={product.score}
-            comments={product.comments}
-            off={product.off}
-            fastDeliver={product.fastDeliver}
-            offPercent={product.offPercent}
-            colors={product.colors}
-            offPrice={product.offPrice}
-          />
-        ))}
-      </div>
-      <div className="grid grid-rows-1 grid-flow-col gap-4 mt-10">
+
+      <ProductsRow data={products} />
+
+      <Divider title="گوشی موبایل" />
+
+      <ProductsRow data={products} />
+
+      <div className="grid grid-rows-1 grid-flow-col gap-4 mt-10 justify-between">
         <img
           src="https://i.postimg.cc/bwfhz8rz/image-11.jpg"
           alt="headset"
@@ -146,54 +70,15 @@ const Popular = () => {
           <NewsItem imgUrl={newsItem.imgUrl} title={newsItem.title} />
         ))}
       </div>
-      <div className="flex justify-between items-center bg-gray-100 rounded-xl px-5 py-3 font-semibold text-lg mt-12 mb-5">
-        <p>جدیدترین گوشی ها</p>
-        <div className="flex items-center">
-          <p>مشاهده همه</p>
-          <BiChevronLeft />
-        </div>
+      <div className="mt-5">
+        <Divider title="جدیدترین گوشی ها" />
       </div>
-      <div className="flex flex-col md:flex-row gap-10 ">
-        {products.map((product) => (
-          <Product
-            productIconUrl={product.productIconUrl}
-            englishTitle={product.englishTitle}
-            productName={product.productName}
-            price={product.price}
-            score={product.score}
-            comments={product.comments}
-            off={product.off}
-            fastDeliver={product.fastDeliver}
-            offPercent={product.offPercent}
-            colors={product.colors}
-            offPrice={product.offPrice}
-          />
-        ))}
-      </div>
-      <div className="flex justify-between items-center bg-gray-100 rounded-xl px-5 py-3 font-semibold text-lg mt-12 mb-5">
-        <p>محصولات جدید</p>
-        <div className="flex items-center">
-          <p>مشاهده همه</p>
-          <BiChevronLeft />
-        </div>
-      </div>
-      <div className="flex flex-col md:flex-row gap-10 ">
-        {products.map((product) => (
-          <Product
-            productIconUrl={product.productIconUrl}
-            englishTitle={product.englishTitle}
-            productName={product.productName}
-            price={product.price}
-            score={product.score}
-            comments={product.comments}
-            off={product.off}
-            fastDeliver={product.fastDeliver}
-            offPercent={product.offPercent}
-            colors={product.colors}
-            offPrice={product.offPrice}
-          />
-        ))}
-      </div>
+
+      <ProductsRow data={products} />
+
+      <Divider title="محصولات جدید" />
+
+      <ProductsRow data={products} />
     </div>
   );
 };
