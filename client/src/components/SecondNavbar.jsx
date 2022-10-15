@@ -159,7 +159,7 @@ const Dropdown = () => {
         onMouseLeave={() => setIsCatBtnHover(false)}
       >
         {/* Right side */}
-        <ul className="font-semibold text-gray-900 bg-gray-100 z-10 pe-5">
+        <ul className="font-semibold text-gray-900 bg-gray-100 z-10 pe-5 pt-3">
           <CategoryTitle
             icon={<AiOutlineMobile />}
             title="موبایل"

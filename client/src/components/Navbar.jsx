@@ -5,6 +5,7 @@ import cartIcon from "../images/cart.png";
 import loginIcon from "../images/login.png";
 import { BiLogIn } from "react-icons/bi";
 import { FiShoppingCart } from "react-icons/fi";
+import { BsSearch } from "react-icons/bs";
 
 const logoIcon = "https://i.postimg.cc/g0n5zwvL/logo.png";
 
@@ -12,7 +13,7 @@ const Navbar = () => {
   return (
     <>
       {/* Navbar */}
-      <nav className="m-5">
+      <nav className="pt-5 mb-5">
         <ul className="flex gap-5 items-center justify-evenly list-none p-0 m-0 ms-1 ">
           {/* Logo */}
           <li className="flex-[1] ">
@@ -24,7 +25,7 @@ const Navbar = () => {
           {/* Search Bar */}
           <div className="flex flex-[4]">
             <button className="ps-4  text-sm text-gray-900 bg-gray-200 rounded-s-lg border-gray-300 outline-0">
-              <img src={searchIcon} alt="Search" className="w-7" />
+              <BsSearch className="text-gray-600" />
             </button>
             <input
               type="search"

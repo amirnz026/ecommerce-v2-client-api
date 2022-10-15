@@ -8,17 +8,19 @@ import Products from "../components/Products";
 import Slider from "../components/Slider";
 import SecondNavbar from "../components/SecondNavbar";
 import HeaderSlider from "../components/HeaderSlider";
-import ReactSlider from "../components/ReactSlider";
 import SpecialOffer from "../components/SpecialOffer";
 import Product from "../components/Product";
 import Popular from "../components/Popular";
+import Header from "../components/Header";
 const Home = () => {
   return (
-    <div className="mx-24">
-      <Navbar />
-      <SecondNavbar />
-      <div className="mb-5"></div>
-      <ReactSlider />
+    <div>
+      <div className="sticky top-0 z-50 bg-white shadow-lg">
+        <Navbar />
+        <SecondNavbar />
+      </div>
+
+      <Header />
       <div className="mb-12"></div>
       <Categories />
       <div className="mb-6"></div>

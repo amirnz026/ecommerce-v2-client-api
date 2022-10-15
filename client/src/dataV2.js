@@ -219,3 +219,19 @@ export const news = [
     imgUrl: "https://i.postimg.cc/63c3Zq7L/best-wireless-headphone.webp",
   },
 ];
+
+// export const sliderImages = [
+//   { url: "https://i.postimg.cc/mDYq6Nms/image-4.jpg" },
+//   { url: "https://i.postimg.cc/BbJyWLz1/image-2.jpg" },
+//   { url: "https://i.postimg.cc/CM4XG7ZC/image-5.jpg" },
+//   { url: "https://i.postimg.cc/zBZ6jPS7/image-1.jpg" },
+//   { url: "https://i.postimg.cc/2yTtCjp9/image-3.jpg" },
+// ];
+export const sliderImages = [
+  {
+    url: "https://i.postimg.cc/9MbGhnRm/a6cff2f31f20f1b31a2d4e7c054ebf0e6f99d798-1665561592.jpg",
+  },
+  {
+    url: "https://i.postimg.cc/ZnDp9vxX/bef3a574e643599e9957144bb94edb92e3375f43-1665826679.jpg",
+  },
+];
