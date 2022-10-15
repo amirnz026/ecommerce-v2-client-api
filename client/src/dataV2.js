@@ -200,3 +200,22 @@ export const products = [
     fastDeliver: true,
   },
 ];
+
+export const news = [
+  {
+    title: "بهترین گوشی سامسونگ (در سال 1401، 2022)",
+    imgUrl: "https://i.postimg.cc/Tw6LmBtG/the-samsung-phone.webp",
+  },
+  {
+    title: "بهترین گوشی اپل (در سال 1401، 2022)",
+    imgUrl: "https://i.postimg.cc/Vk2bsJMJ/best-iphone.webp",
+  },
+  {
+    title: "بهترین گوشی آنر (در سال 1401، 2022)",
+    imgUrl: "https://i.postimg.cc/sx224z7F/honor.webp",
+  },
+  {
+    title: "بهترین هندزفری تا 300 تومان (در سال 1401، 2022)",
+    imgUrl: "https://i.postimg.cc/63c3Zq7L/best-wireless-headphone.webp",
+  },
+];

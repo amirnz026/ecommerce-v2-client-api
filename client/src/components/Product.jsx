@@ -6,7 +6,7 @@ import { TbTruckDelivery } from "react-icons/tb";
 const Product = (props) => {
   return (
     <div className="flex flex-col  justify-center cursor-pointer relative">
-      <div className="bg-gray-100 ">
+      <div className="bg-gray-100 rounded-xl">
         <img
           src={props.productIconUrl}
           alt={props.englishTitle}
