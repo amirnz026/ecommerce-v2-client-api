@@ -12,34 +12,8 @@ const images = [
   { url: "https://i.postimg.cc/CM4XG7ZC/image-5.jpg" },
 ];
 
-const Left = () => {
-  return (
-    <div className="rounded-e-3xl overflow-hidden cursor-pointer">
-      <img
-        src={imageRight}
-        className="rounded-e-3xl transition-all duration-300 transform hover:scale-105 ease"
-        alt="smart watch"
-      />
-    </div>
-  );
-};
-
-const Right = () => {
-  <div className="rounded-s-3xl overflow-hidden cursor-pointer">
-    <img
-      src={imageLeft}
-      className="rounded-s-3xl transition-all duration-300 transform hover:scale-105 ease"
-      alt="smart watch"
-    />
-  </div>;
-};
-
 const Header = () => {
-  return (
-    <>
-      <Slider />
-    </>
-  );
+  return <Slider />;
 };
 
 export default Header;

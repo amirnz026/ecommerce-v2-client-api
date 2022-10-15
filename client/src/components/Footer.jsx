@@ -49,7 +49,7 @@ const Contact = () => {
           <AiFillCaretUp />
         </p>
       </div>
-      <div className="flex justify-between bg-gray-100 rounded-2xl p-8">
+      <div className="flex flex-col md:flex-row justify-between  bg-gray-100 rounded-2xl p-8">
         {/* start div */}
         <div className="leading-8">
           <div>
@@ -67,7 +67,7 @@ const Contact = () => {
           </div>
         </div>
         {/* end div */}
-        <div className="flex gap-14">
+        <div className="grid grid-cols-4 md:flex  gap-5 md:gap-14 mt-5  md:mt-0">
           <FooterIcon Icon={TbTruckDelivery} title="ارسال سریع کالا" />
           <FooterIcon Icon={BiCheckShield} title="تضمین اصالت کالا" />
           <FooterIcon Icon={BiSupport} title="پشتیبانی تلفنی" />
@@ -78,28 +78,28 @@ const Contact = () => {
   );
 };
 
-const footer_link = "leading-8 cursor-pointer";
+const footer_link = "leading-9 cursor-pointer";
 
 const FooterLinks = (props) => {
   return (
     <>
-      <div className="grid grid-cols-6">
+      <div className="grid grid-cols-5 md:grid-cols-6 text-xs md:text-base">
         <div className="flex flex-col">
-          <p className="font-semibold">با شاپلی</p>
+          <p className="font-semibold mb-3 md:mb-0">با شاپلی</p>
           <p className={footer_link}>درباره شاپلی</p>
           <p className={footer_link}>تماس با شاپلی</p>
           <p className={footer_link}>فرصت های شغلی</p>
           <p className={footer_link}>فروشنده شوید</p>
         </div>
         <div className="flex flex-col">
-          <p className="font-semibold">راهنمای خرید</p>
+          <p className="font-semibold mb-3 md:mb-0">راهنمای خرید</p>
           <p className={footer_link}>روش های پرداخت</p>
           <p className={footer_link}>روش های ارسال کالا</p>
           <p className={footer_link}>لغو و بازگشت کالا</p>
           <p className={footer_link}>ضمانت اصالت کالا</p>
         </div>
         <div className="flex flex-col">
-          <p className="font-semibold">خدمات مشتریان</p>
+          <p className="font-semibold mb-3 md:mb-0">خدمات مشتریان</p>
           <p className={footer_link}>راهنمای جامع</p>
           <p className={footer_link}>شرایط و قوانین</p>
           <p className={footer_link}>سوالات متداول</p>
@@ -107,7 +107,7 @@ const FooterLinks = (props) => {
           <p className={footer_link}>باشگاه مشتریان شاپلی</p>
         </div>
         <div className="flex flex-col">
-          <p className="font-semibold">قیمت گوشی</p>
+          <p className="font-semibold mb-3 md:mb-0">قیمت گوشی</p>
           <p className={footer_link}>قیمت روز گوشی موبایل</p>
           <p className={footer_link}>قیمت گوشی سامسونگ</p>
           <p className={footer_link}>قیمت گوشی شیائومی</p>
@@ -115,7 +115,7 @@ const FooterLinks = (props) => {
           <p className={footer_link}>قیمت گوشی هواوی</p>
         </div>
         <div className="flex flex-col">
-          <p className="font-semibold">قیمت کالای دیجیتال</p>
+          <p className="font-semibold mb-3 md:mb-0">قیمت کالای دیجیتال</p>
           <p className={footer_link}>قیمت هدفون، هدست، هندزفری</p>
           <p className={footer_link}>قیمت تلویزیون</p>
           <p className={footer_link}>قیمت کنسول بازی خانگی</p>
@@ -123,12 +123,12 @@ const FooterLinks = (props) => {
           <p className={footer_link}>قیمت تبلت</p>
         </div>
         {/* End column */}
-        <div className="flex flex-col gap-5">
-          <div className="flex justify-between items-center">
+        <div className="flex flex-col gap-5 col-span-5 md:col-span-1">
+          <div className="flex justify-start md:justify-center items-center">
             <p className="font-semibold">با ما همراه باشید</p>
-            <div className="flex items-center gap-5 text-gray-400">
-              <AiOutlineInstagram />
-              <TbBrandTelegram />
+            <div className="flex items-center ms-auto md:ms-0 gap-5 text-gray-400">
+              <AiOutlineInstagram className="text-gray-300" size={30} />
+              <TbBrandTelegram className="text-gray-300" size={30} />
             </div>
           </div>
           <p className="font-semibold">از آخرین تخفیف ها با خبر شوید</p>
@@ -136,7 +136,7 @@ const FooterLinks = (props) => {
             className="bg-gray-100  text-sm rounded-lg focus:border-blue-500 block w-full p-2.5  dark:focus:ring-blue-500 "
             placeholder="ایمیل خود را وارد کنید"
           />
-          <button className="text-white bg-[#03DAC5] hover:bg-[#03DAC5]  focus:outline-none font-medium rounded-lg text-sm w-[50%]  px-5 py-2.5 text-center dark:bg-[#03DAC5] dark:hover:bg-[#02b3a1] ">
+          <button className="text-white  bg-[#03DAC5] hover:bg-[#03DAC5]  focus:outline-none font-medium rounded-lg text-sm w-20 md:w-[50%]  px-5 py-2.5 text-center dark:bg-[#03DAC5] dark:hover:bg-[#02b3a1] ">
             ثبت
           </button>
         </div>
@@ -177,8 +177,8 @@ const ApplicationReference = (props) => {
 const Copyright = (props) => {
   return (
     <>
-      <div className="grid grid-cols-5 items-center">
-        <div className="col-span-3">
+      <div className="grid grid-cols-1 md:grid-cols-5 items-center">
+        <div className="col-span-3 ">
           <p className="font-semibold mb-3">
             این وبسایت صرفا جنبه نمایشی دارد و برای رزومه کاری استفاده می شود
           </p>
@@ -187,8 +187,8 @@ const Copyright = (props) => {
             نمایش و ارائه می باشند تا قالب وبسایت تکمیل به نظر برسد
           </p>
         </div>
-        <div className="col-span-2">
-          <div className="flex flex-row-reverse gap-10 cursor-pointer">
+        <div className="col-span-5">
+          <div className="flex flex-row-reverse justify-center gap-10 cursor-pointer">
             <img src="https://i.postimg.cc/RZsKBdQ9/enamad.png" alt="enamad" />
             <img
               src="https://i.postimg.cc/pd3j9d66/samandehi.png
@@ -200,7 +200,7 @@ const Copyright = (props) => {
         <hr className="mb-5" />
       </div>
 
-      <div>
+      <div className="text-center">
         <p>
           کلیه حقوق این سایت متعلق به{" "}
           <a href="#" className="text-[#6200EE] font-bold">

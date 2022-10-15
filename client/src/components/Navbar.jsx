@@ -65,7 +65,7 @@ const Navbar = () => {
                     ></path>
                   </svg>
                 </span>
-                <span class="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white">
+                <span class="relative w-full text-left transition-colors duration-200 ease-in-out text-sm md:text-base group-hover:text-white">
                   ورود | ثبت نام
                 </span>
               </a>

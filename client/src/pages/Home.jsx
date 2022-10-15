@@ -64,3 +64,14 @@ const Home = () => {
 };
 
 export default Home;
+
+// iPhone SE: sm
+// iPad mini, Air, Surface Pro 7: md
+// iPad Pro: lg
+// Laptop Monitor: 2xl
+
+// Mobile S, M, L: sm
+// Tablet: md
+// Laptop: lg
+// Laptop L: xl
+// 4k: 2xl

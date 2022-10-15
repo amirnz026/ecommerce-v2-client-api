@@ -40,7 +40,7 @@ const Popular = () => {
 
       <ProductsRow data={products} />
 
-      <div className="grid grid-rows-1 grid-flow-col gap-4 mt-10 justify-between">
+      <div className="grid grid-rows-2 md:grid-rows-1 grid-flow-col gap-4 mt-10 justify-between">
         <img
           src="https://i.postimg.cc/bwfhz8rz/image-11.jpg"
           alt="headset"
@@ -65,7 +65,7 @@ const Popular = () => {
       <div className="mt-5">
         <p className="font-bold mb-7">اخبار پربازدید تکنولوژی</p>
       </div>
-      <div className="flex gap-5 ">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-5 ">
         {news.map((newsItem) => (
           <NewsItem imgUrl={newsItem.imgUrl} title={newsItem.title} />
         ))}
