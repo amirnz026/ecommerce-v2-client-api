@@ -15,7 +15,7 @@ const Popular = () => {
           <BiChevronLeft />
         </div>
       </div>
-      <div className="flex flex-col md:flex-row gap-10 ">
+      <div className="flex flex-col md:flex-row gap-10 mb-12">
         {products.map((product) => (
           <Product
             productIconUrl={product.productIconUrl}
@@ -37,7 +37,7 @@ const Popular = () => {
           <Brand imgUrl={brand.imgUrl} brand={brand.brand} />
         ))}
       </div>
-      <div className="flex justify-between items-center bg-gray-100 rounded-xl px-5 py-3 font-semibold text-lg mt-12 mb-5">
+      <div className="flex justify-between items-center bg-gray-100 rounded-xl px-5 py-3 font-semibold text-lg mt-12 mb-6">
         <p>پرفروشترین ها</p>
         <div className="flex items-center">
           <p>مشاهده همه</p>

@@ -1,8 +1,12 @@
 import React from "react";
-import logoIcon from "../images/logo-assets/logo.png";
+
 import searchIcon from "../images/search.png";
 import cartIcon from "../images/cart.png";
 import loginIcon from "../images/login.png";
+import { BiLogIn } from "react-icons/bi";
+import { FiShoppingCart } from "react-icons/fi";
+
+const logoIcon = "https://i.postimg.cc/g0n5zwvL/logo.png";
 
 const Navbar = () => {
   return (
@@ -33,18 +37,42 @@ const Navbar = () => {
           {/* Login Register Cart */}
           <div className="md:flex-[5]"></div>
           <ul className="flex justify-end items-center gap-5 list-none p-0 m-0 flex-[2] me-3">
+            {/* Login Button */}
             <li className="flex">
-              <div className="flex p-3 border w-full text-sm rounded-2xl font-semibold text-gray-700 border-gray-300">
-                <img
-                  src={loginIcon}
-                  alt="Login-Register"
-                  className="w-6 me-2"
-                />
-                ورود | ثبت‌نام
-              </div>
+              <a
+                href="#_"
+                class="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold  transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-gray-50 group"
+              >
+                <span class="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out bg-[#6200EE] group-hover:h-full"></span>
+                <span class="absolute right-0 pr-4 duration-200 ease-out group-hover:translate-x-12">
+                  <BiLogIn className="text-[#03DAC5] mt-1" size={25} />
+                </span>
+                <span class="absolute left-0 pl-2.5 -translate-x-12 group-hover:translate-x-0 ease-out duration-200">
+                  <svg
+                    class="w-5 h-5 text-[#03DAC5]"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M14 5l7 7m0 0l-7 7m7-7H3"
+                    ></path>
+                  </svg>
+                </span>
+                <span class="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white">
+                  ورود | ثبت نام
+                </span>
+              </a>
             </li>
             <li>
-              <img src={cartIcon} alt="Cart" className="w-7 cursor-pointer" />
+              <FiShoppingCart
+                size={25}
+                className="text-gray-600 cursor-pointer"
+              />
             </li>
           </ul>
         </ul>

@@ -14,20 +14,19 @@ import Product from "../components/Product";
 import Popular from "../components/Popular";
 const Home = () => {
   return (
-    <div>
-      {/* <Announcement /> */}
-      {/* <Navbar /> */}
-      {/* <SecondNavbar /> */}
-      {/* <HeaderSlider /> */}
-      {/* <Slider /> */}
-      {/* <ReactSlider /> */}
-      {/* <Categories /> */}
-      {/* <SpecialOffer /> */}
+    <div className="mx-24">
+      <Navbar />
+      <SecondNavbar />
+      <div className="mb-5"></div>
+      <ReactSlider />
+      <div className="mb-12"></div>
+      <Categories />
+      <div className="mb-6"></div>
+      <SpecialOffer />
+      <div className="mb-6"></div>
       <Popular />
-      {/* <Product /> */}
-      {/* <Products /> */}
-      {/* <Newsletter /> */}
-      {/*<Footer /> */}
+      <div className="mb-12"></div>
+      <Footer />
     </div>
   );
 };

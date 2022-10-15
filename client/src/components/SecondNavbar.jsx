@@ -129,7 +129,7 @@ const Dropdown = () => {
       {/* Categories Button */}
       <a
         href="#_"
-        className="relative inline-flex items-center justify-center p-3 overflow-hidden font-medium text-[#6200EE] transition duration-300 ease-out rounded-t-2xl  group"
+        className="relative inline-flex items-center justify-center p-3 overflow-hidden font-bold px-7 text-[#6200EE] bg-[#6300ee0a] transition duration-300 ease-out rounded-t-2xl  group"
         onMouseEnter={() => setIsCatBtnHover(true)}
         onMouseLeave={() => setIsCatBtnHover(false)}
       >
@@ -150,7 +150,7 @@ const Dropdown = () => {
 
       {/* Categories Dropdown */}
       <div
-        className={`flex pt-2 rounded-md h-[20rem] w-[28rem] absolute start-0  shadow-lg shadow-gray-300 z-10 bg-white ${
+        className={`flex pt-2 rounded-md h-[20rem] w-[28rem] absolute start-0  shadow-lg shadow-gray-500 z-10 bg-white ${
           isCatBtnHover
             ? "opacity-1 pointer-events-auto"
             : "opacity-0 pointer-events-none"
@@ -159,7 +159,7 @@ const Dropdown = () => {
         onMouseLeave={() => setIsCatBtnHover(false)}
       >
         {/* Right side */}
-        <ul className="font-semibold text-gray-900 bg-gray-100 z-10 ">
+        <ul className="font-semibold text-gray-900 bg-gray-100 z-10 pe-5">
           <CategoryTitle
             icon={<AiOutlineMobile />}
             title="موبایل"
@@ -257,8 +257,8 @@ const NavItems = () => {
 
 const ChooseCity = () => {
   return (
-    <div className="flex items-center gap-2">
-      <FiMapPin className="text-gray-500" />
+    <div className="flex items-center gap-2 cursor-pointer">
+      <FiMapPin className="text-[#6200EE]  transition-all duration-300 transform hover:scale-110 ease " />
       <p className="me-3">لطفا شهر خود را انتخاب کنید </p>
     </div>
   );

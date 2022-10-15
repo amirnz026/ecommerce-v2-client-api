@@ -12,12 +12,14 @@ import SecondNavbar from "./SecondNavbar";
 const SpecialOffer = () => {
   return (
     <div>
-      <div className="flex items-center gap-3 justify-between bg-[#03DAC5] rounded-xl text-gray-50">
-        <div className="flex items-center gap-2">
+      <div className="flex items-center gap-3 justify-between bg-[#03DAC5] rounded-xl text-gray-50 mb-6">
+        <div className="flex items-center gap-2 ms-8">
           <FaPercentage className="mt-2" />
           <p>پیشنهاد ویژه شاپلی</p>
         </div>
-        <Timer />
+        <div className="me-6">
+          <Timer />
+        </div>
       </div>
       <div className="flex flex-col md:flex-row gap-10">
         {products.map((product) => (
