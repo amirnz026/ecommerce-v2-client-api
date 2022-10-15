@@ -5,12 +5,12 @@ import { TbTruckDelivery } from "react-icons/tb";
 
 const Product = (props) => {
   return (
-    <div className="flex flex-col  justify-center cursor-pointer relative">
+    <div className="flex flex-col justify-center cursor-pointer relative">
       <div className="bg-gray-100 rounded-xl flex justify-center">
         <img
           src={props.productIconUrl}
           alt={props.englishTitle}
-          className="rounded-2xl px-[75px] py-[20px] transition-all duration-300 transform hover:scale-[1.08] ease "
+          className="rounded-2xl  px-[60px] py-[15px] md:px-[75px] md:py-[20px] transition-all duration-300 transform hover:scale-[1.08] ease "
         />
       </div>
 
@@ -46,11 +46,11 @@ const Product = (props) => {
           <span className="ms-2 align-super">سریع</span>
         </div>
       )}
-      <div className="flex absolute right-3">
+      <div className="flex absolute right-3 top-24 md:top-[140px]">
         {props.colors &&
           props.colors.map((color) => (
             <div
-              class={`rounded-full flex p-1 relative`}
+              className={`rounded-full flex p-1 relative`}
               style={{ backgroundColor: color }}
             />
           ))}

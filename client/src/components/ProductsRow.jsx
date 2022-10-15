@@ -1,10 +1,13 @@
 import React from "react";
 import Product from "./Product";
 import { products } from "../dataV2";
+import "../index.css";
 
 const ProductsRow = (props) => {
   return (
-    <div className="flex flex-col md:flex-row gap-10 mb-12 justify-center">
+    <div
+      className={`grid grid-cols-3 md:grid-cols-5 gap-5 md:gap-10 mb-12 justify-center`}
+    >
       {props.data.map((product) => (
         <Product
           productIconUrl={product.productIconUrl}
