@@ -54,10 +54,13 @@ const Contact = () => {
         <div className="leading-8">
           <div>
             <p>پشتیبانی</p>
-            <div className="flex gap-4 items-center">
-              <p className="text-gray-500">تلفنی:</p>
-              <p>032-45264356</p>
-              <p className="text-gray-500">|</p>
+            <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
+              <div className="flex flex-row">
+                <p className="text-gray-500">تلفنی:</p>
+                <p className="ms-4">032-45264356</p>
+              </div>
+
+              <p className="text-gray-500 hidden sm:block">|</p>
               <p>شنبه تا چهارشنبه 8 الی 21 - پنجشنبه 8 الی 20:30</p>
             </div>
             <div className="flex gap-4 items-center">
@@ -67,7 +70,7 @@ const Contact = () => {
           </div>
         </div>
         {/* end div */}
-        <div className="grid grid-cols-4 md:flex  gap-5 md:gap-14 mt-5  md:mt-0">
+        <div className="grid grid-cols-2 sm:grid-cols-4 md:flex  gap-5 md:gap-14 mt-5  md:mt-0">
           <FooterIcon Icon={TbTruckDelivery} title="ارسال سریع کالا" />
           <FooterIcon Icon={BiCheckShield} title="تضمین اصالت کالا" />
           <FooterIcon Icon={BiSupport} title="پشتیبانی تلفنی" />
@@ -83,47 +86,50 @@ const footer_link = "leading-9 cursor-pointer";
 const FooterLinks = (props) => {
   return (
     <>
-      <div className="grid grid-cols-5 md:grid-cols-6 text-xs md:text-base">
-        <div className="flex flex-col">
-          <p className="font-semibold mb-3 md:mb-0">با شاپلی</p>
+      <div className="grid grid-cols-3 items-center sm:grid sm:grid-cols-6 text-xs md:text-base justify-start">
+        <div className="flex flex-col col-span-1 ms-5 sm:ms-0">
+          <p className="font-semibold mb-3 md:mb-3 w-10 sm:w-full">با شاپلی</p>
           <p className={footer_link}>درباره شاپلی</p>
           <p className={footer_link}>تماس با شاپلی</p>
           <p className={footer_link}>فرصت های شغلی</p>
           <p className={footer_link}>فروشنده شوید</p>
         </div>
-        <div className="flex flex-col">
-          <p className="font-semibold mb-3 md:mb-0">راهنمای خرید</p>
+        <div className="flex flex-col col-span-1 ms-5 sm:ms-0">
+          <p className="font-semibold mb-3 md:mb-3 w-28 sm:w-full">
+            راهنمای خرید
+          </p>
           <p className={footer_link}>روش های پرداخت</p>
           <p className={footer_link}>روش های ارسال کالا</p>
           <p className={footer_link}>لغو و بازگشت کالا</p>
           <p className={footer_link}>ضمانت اصالت کالا</p>
         </div>
-        <div className="flex flex-col">
-          <p className="font-semibold mb-3 md:mb-0">خدمات مشتریان</p>
+        <div className="flex flex-col col-span-1 ms-5 sm:ms-5">
+          <p className="font-semibold mb-3 md:mb-3 w-28 sm:w-full">
+            خدمات مشتریان
+          </p>
           <p className={footer_link}>راهنمای جامع</p>
           <p className={footer_link}>شرایط و قوانین</p>
           <p className={footer_link}>سوالات متداول</p>
           <p className={footer_link}>حریم خصوصی</p>
-          <p className={footer_link}>باشگاه مشتریان شاپلی</p>
         </div>
-        <div className="flex flex-col">
-          <p className="font-semibold mb-3 md:mb-0">قیمت گوشی</p>
+        <div className="flex flex-col col-span-1  hidden sm:block">
+          <p className="font-semibold mb-3 md:mb-3 w-28 sm:w-full">قیمت گوشی</p>
           <p className={footer_link}>قیمت روز گوشی موبایل</p>
           <p className={footer_link}>قیمت گوشی سامسونگ</p>
           <p className={footer_link}>قیمت گوشی شیائومی</p>
-          <p className={footer_link}>قیمت گوشی اپل</p>
           <p className={footer_link}>قیمت گوشی هواوی</p>
         </div>
-        <div className="flex flex-col">
-          <p className="font-semibold mb-3 md:mb-0">قیمت کالای دیجیتال</p>
-          <p className={footer_link}>قیمت هدفون، هدست، هندزفری</p>
+        <div className="flex flex-col col-span-2 sm:col-span-1  hidden sm:block">
+          <p className="font-semibold mb-3 md:mb-3 w-28 sm:w-full">
+            قیمت کالای دیجیتال
+          </p>
           <p className={footer_link}>قیمت تلویزیون</p>
           <p className={footer_link}>قیمت کنسول بازی خانگی</p>
           <p className={footer_link}>قیمت لپتاپ</p>
-          <p className={footer_link}>قیمت تبلت</p>
+          <p className={footer_link}>قیمت هدفون</p>
         </div>
         {/* End column */}
-        <div className="flex flex-col gap-5 col-span-5 md:col-span-1">
+        <div className="flex flex-col gap-5 col-span-5 mt-5 sm:mt-0 md:col-span-1">
           <div className="flex justify-start md:justify-center items-center">
             <p className="font-semibold">با ما همراه باشید</p>
             <div className="flex items-center ms-auto md:ms-0 gap-5 text-gray-400">
@@ -148,8 +154,8 @@ const FooterLinks = (props) => {
 const ApplicationReference = (props) => {
   return (
     <>
-      <div className="flex justify-between items-center bg-gray-100 rounded-xl px-5 py-3 font-semibold text-lg mt-12 mb-5">
-        <div className="flex items-center gap-3 text-[#6200EE]">
+      <div className="flex flex-col sm:flex-row gap-6 sm:gap-0 justify-between items-center bg-gray-100 rounded-xl px-5 py-3 font-semibold text-lg mt-12 mb-5">
+        <div className="flex  items-center gap-3 text-[#6200EE]">
           <BiSquareRounded size={25} />
           <p className="font-bold">کارایی بهتر در اپلیکیشن شاپلی</p>
         </div>
@@ -178,7 +184,7 @@ const Copyright = (props) => {
   return (
     <>
       <div className="grid grid-cols-1 md:grid-cols-5 items-center">
-        <div className="col-span-3 ">
+        <div className="colspan-1 md:col-span-3">
           <p className="font-semibold mb-3">
             این وبسایت صرفا جنبه نمایشی دارد و برای رزومه کاری استفاده می شود
           </p>
@@ -187,7 +193,7 @@ const Copyright = (props) => {
             نمایش و ارائه می باشند تا قالب وبسایت تکمیل به نظر برسد
           </p>
         </div>
-        <div className="col-span-5">
+        <div className="col-span-1 md:col-span-2">
           <div className="flex flex-row-reverse justify-center gap-10 cursor-pointer">
             <img src="https://i.postimg.cc/RZsKBdQ9/enamad.png" alt="enamad" />
             <img

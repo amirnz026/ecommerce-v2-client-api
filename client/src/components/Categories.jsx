@@ -1,5 +1,4 @@
 import React from "react";
-import styled from "styled-components";
 import computerAccess from "../images/category-icons/computer-access.svg";
 import headset from "../images/category-icons/laptop.svg";
 import laptop from "../images/category-icons/laptop.svg";
@@ -21,21 +20,24 @@ const headerCategories = [
 ];
 
 const imgClass =
-  "bg-gray-100 rounded-xl w-10 scale-[2] mb-7 mt-3 cursor-pointer";
+  "bg-gray-100 rounded-xl w-10 scale-[2] mb-7 mt-5 cursor-pointer ";
 const listClass =
   "flex flex-col items-center font-semibold text-gray-600 cursor-pointer";
 
 const Categories = () => {
   return (
-    <ul className="flex justify-between mt-3">
-      <li className={listClass}>
-        <img src={mobileAccess} alt="mobile accessories" className={imgClass} />
-        <p className="text-sm">جانبی موبایل</p>
-      </li>
+    // justify center => between
+    <ul className="overflow-auto w-80 mx-auto pb-5 sm:mx-0 sm:w-full sm:pb-0 gap-14 flex justify-between mt-3">
       <li className={listClass}>
         <img src={mobile} alt="mobile" className={imgClass} />
         <p className="text-sm">گوشی موبایل</p>
       </li>
+
+      <li className={listClass}>
+        <img src={mobileAccess} alt="mobile accessories" className={imgClass} />
+        <p className="text-sm">جانبی موبایل</p>
+      </li>
+
       <li className={listClass}>
         <img
           src={computerAccess}
@@ -46,8 +48,9 @@ const Categories = () => {
       </li>
       <li className={listClass}>
         <img src={tablet} alt="tablet" className={imgClass} />
-        <p className="text-sm">تبلت</p>
+        <p className="text-sm">تبلت هوشمند</p>
       </li>
+
       <li className={listClass}>
         <img src={powerBank} alt="powerbank" className={imgClass} />
         <p className="text-sm">پاوربانک</p>

@@ -40,10 +40,10 @@ const Home = () => {
   return (
     <div className="center-all">
       <div>
-        <div className="sticky top-0 z-50 bg-white shadow-lg pb-1">
+        <div className=" sticky  top-0 z-50 bg-white shadow-lg pb-1 hidden">
           <Navbar />
         </div>
-        <header className="mt-[78px] z-10 shadow-md">
+        <header className="mt-[78px] z-10 shadow-md hidden">
           <SecondNavbar />
         </header>
         <div className="mt-36 cursor-pointer">
@@ -64,14 +64,3 @@ const Home = () => {
 };
 
 export default Home;
-
-// iPhone SE: sm
-// iPad mini, Air, Surface Pro 7: md
-// iPad Pro: lg
-// Laptop Monitor: 2xl
-
-// Mobile S, M, L: sm
-// Tablet: md
-// Laptop: lg
-// Laptop L: xl
-// 4k: 2xl

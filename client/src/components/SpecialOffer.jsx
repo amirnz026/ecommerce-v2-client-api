@@ -23,16 +23,16 @@ const SpecialOffer = () => {
         </div>
       </div>
       <ProductsRow data={products} />
-      <div className="flex justify-around">
+      <div className="flex flex-col sm:flex-row justify-around">
         <img
           src="https://i.postimg.cc/Fz5HwQvJ/image-8.jpg"
           alt="samsung watch"
-          className="rounded-2xl cursor-pointer w-[45%]"
+          className="hidden sm:block rounded-2xl cursor-pointer w-full sm:w-[45%]"
         />
         <img
           src="https://i.postimg.cc/XYH7453W/image-9.jpg"
           alt="huawei accessories"
-          className="rounded-2xl cursor-pointer w-[45%]"
+          className="rounded-2xl cursor-pointer w-full sm:w-[45%]"
         />
       </div>
     </div>

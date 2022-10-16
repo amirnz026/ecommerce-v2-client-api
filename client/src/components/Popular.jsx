@@ -12,7 +12,7 @@ const Popular = () => {
     <div>
       <Divider title="پربازدیدترین ها" />
       <ProductsRow data={products} />
-      <div className="flex gap-9 ">
+      <div className="flex gap-5 overflow-auto w-96 mx-auto pb-5 sm:mx-0 sm:w-full sm:pb-0 justify-between mt-3">
         {brands.map((brand) => (
           <Brand imgUrl={brand.imgUrl} brand={brand.brand} />
         ))}
@@ -27,7 +27,7 @@ const Popular = () => {
         <img
           src="https://i.postimg.cc/q7MMT0DN/image-10.jpg"
           alt="gamers"
-          className="mt-10 rounded-2xl w-full"
+          className="mt-0 sm:mt-10 rounded-2xl w-full"
         />
       </div>
       <div className="mt-5">
@@ -65,7 +65,7 @@ const Popular = () => {
       <div className="mt-5">
         <p className="font-bold mb-7">اخبار پربازدید تکنولوژی</p>
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-5 ">
+      <div className="flex gap-5 overflow-auto  mx-auto pb-5 sm:mx-0 sm:w-full sm:pb-0   justify-between mt-3">
         {news.map((newsItem) => (
           <NewsItem imgUrl={newsItem.imgUrl} title={newsItem.title} />
         ))}
