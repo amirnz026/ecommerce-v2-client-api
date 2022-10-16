@@ -18,7 +18,7 @@ body {
 }
 
 .center-all {
-  max-width: 1600px;
+  max-width: 1500px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -56,4 +56,12 @@ header {
 }
 .menu-is-open header {
   filter: none;
+}
+.twoLinesText {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* number of lines to show */
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
 }

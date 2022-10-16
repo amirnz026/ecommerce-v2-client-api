@@ -12,7 +12,7 @@ const Popular = () => {
     <div>
       <Divider title="پربازدیدترین ها" />
       <ProductsRow data={products} />
-      <div className="flex gap-5 overflow-auto w-96 mx-auto pb-5 sm:mx-0 sm:w-full sm:pb-0 justify-between mt-3">
+      <div className="flex gap-5 overflow-auto w-80  mx-auto pb-5 sm:mx-0 sm:w-full sm:pb-0 justify-between mt-3">
         {brands.map((brand) => (
           <Brand imgUrl={brand.imgUrl} brand={brand.brand} />
         ))}

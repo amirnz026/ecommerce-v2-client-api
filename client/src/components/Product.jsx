@@ -6,25 +6,27 @@ import { TbTruckDelivery } from "react-icons/tb";
 const Product = (props) => {
   return (
     <div className="flex flex-col justify-center cursor-pointer relative">
-      <div className="bg-gray-100 rounded-xl flex justify-center w-48 sm:w-full">
+      <div className="bg-gray-100 rounded-xl flex justify-center w-48 lg:w-72 xl:w-full">
         <img
           src={props.productIconUrl}
           alt={props.englishTitle}
-          className="rounded-2xl  px-[40px] py-[25px] sm:px-[75px] sm:py-[20px] transition-all duration-300 transform hover:scale-[1.08] ease "
+          className="rounded-2xl  px-[40px] py-[25px]  lg:px-[75px] lg:py-[20px] xl:px-[75px] xl:py-[20px] transition-all duration-300 transform hover:scale-[1.08] ease "
         />
       </div>
 
       <p className="twoLinesText text-sm my-2 leading-7">{props.productName}</p>
       {props.off && (
         <div>
-          <p className="mb-2 flex flex-col sm:flex-row">
+          <p className="mb-2 flex flex-col lg:flex-row">
             {props.offPrice} تومان
-            <span className="line-through ms-0 sm:ms-2">{props.price}</span>
+            <span className="line-through ms-0 lg:ms-2 text-red-400">
+              {props.price}
+            </span>
           </p>
         </div>
       )}
       {!props.off && (
-        <p className="mb-2 mt-6 sm:mt-0">
+        <p className="mb-2 mt-6 lg:mt-0">
           {props.price} <span>تومان</span>
         </p>
       )}
@@ -47,7 +49,7 @@ const Product = (props) => {
           <span className="ms-2 align-super">سریع</span>
         </div>
       )}
-      <div className="flex absolute right-3 top-36 sm:top-[140px]">
+      <div className="flex absolute right-3 top-36 lg:top-[60px] xl:top-[140px]">
         {props.colors &&
           props.colors.map((color) => (
             <div

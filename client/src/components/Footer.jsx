@@ -49,7 +49,7 @@ const Contact = () => {
           <AiFillCaretUp />
         </p>
       </div>
-      <div className="flex flex-col md:flex-row justify-between  bg-gray-100 rounded-2xl p-8">
+      <div className="flex flex-col xl:flex-row justify-between bg-gray-100 rounded-2xl p-8">
         {/* start div */}
         <div className="leading-8">
           <div>
@@ -70,7 +70,7 @@ const Contact = () => {
           </div>
         </div>
         {/* end div */}
-        <div className="grid grid-cols-2 sm:grid-cols-4 md:flex  gap-5 md:gap-14 mt-5  md:mt-0">
+        <div className="grid grid-cols-2 lg:flex gap-5 justify-center  md:gap-14 mt-5  lg:mt-0">
           <FooterIcon Icon={TbTruckDelivery} title="ارسال سریع کالا" />
           <FooterIcon Icon={BiCheckShield} title="تضمین اصالت کالا" />
           <FooterIcon Icon={BiSupport} title="پشتیبانی تلفنی" />
@@ -86,7 +86,7 @@ const footer_link = "leading-9 cursor-pointer";
 const FooterLinks = (props) => {
   return (
     <>
-      <div className="grid grid-cols-3 items-center sm:grid sm:grid-cols-6 text-xs md:text-base justify-start">
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-y-0 md:gap-y-10 lg:gap-y-0  items-center lg:grid lg:grid-cols-5 xl:grid-cols-6 text-xs md:text-base justify-start ">
         <div className="flex flex-col col-span-1 ms-5 sm:ms-0">
           <p className="font-semibold mb-3 md:mb-3 w-10 sm:w-full">با شاپلی</p>
           <p className={footer_link}>درباره شاپلی</p>
@@ -98,10 +98,14 @@ const FooterLinks = (props) => {
           <p className="font-semibold mb-3 md:mb-3 w-28 sm:w-full">
             راهنمای خرید
           </p>
-          <p className={footer_link}>روش های پرداخت</p>
-          <p className={footer_link}>روش های ارسال کالا</p>
+
+          <div className="hidden sm:block">
+            <p className={footer_link}>روش های پرداخت</p>
+          </div>
+
+          <p className={footer_link}>ارسال کالا</p>
           <p className={footer_link}>لغو و بازگشت کالا</p>
-          <p className={footer_link}>ضمانت اصالت کالا</p>
+          <p className={footer_link}>ضمانت کالا</p>
         </div>
         <div className="flex flex-col col-span-1 ms-5 sm:ms-5">
           <p className="font-semibold mb-3 md:mb-3 w-28 sm:w-full">
@@ -129,8 +133,8 @@ const FooterLinks = (props) => {
           <p className={footer_link}>قیمت هدفون</p>
         </div>
         {/* End column */}
-        <div className="flex flex-col gap-5 col-span-5 mt-5 sm:mt-0 md:col-span-1">
-          <div className="flex justify-start md:justify-center items-center">
+        <div className="flex flex-col gap-5 col-span-5 mt-5 sm:mt-0 md:col-span-5 xl:col-span-1">
+          <div className="flex justify-start mt-5 xl:mt-0 xl:justify-center items-center">
             <p className="font-semibold">با ما همراه باشید</p>
             <div className="flex items-center ms-auto md:ms-0 gap-5 text-gray-400">
               <AiOutlineInstagram className="text-gray-300" size={30} />
@@ -159,7 +163,7 @@ const ApplicationReference = (props) => {
           <BiSquareRounded size={25} />
           <p className="font-bold">کارایی بهتر در اپلیکیشن شاپلی</p>
         </div>
-        <div className="flex items-center gap-3">
+        <div className="flex flex-col sm:flex-row items-center gap-3">
           <img
             src="https://i.postimg.cc/7Lsxcymq/bazaar-badge2-300x89.png"
             alt="دانلود از بازار"
@@ -170,7 +174,7 @@ const ApplicationReference = (props) => {
             alt="دانلود از گوگل پلی"
             className="w-28 rounded-2xl shadow-md cursor-pointer"
           />
-          <div className="flex items-center gap-3 text-black bg-white shadow-md   focus:outline-none font-medium rounded-lg text-sm w-[50%]  px-5 py-2 text-center ">
+          <div className="hidden sm:flex items-center gap-3 text-black bg-white shadow-md   focus:outline-none font-medium rounded-lg text-sm w-[50%]  px-5 py-2 text-center ">
             <p className="cursor-pointer">بیشتر</p>
             <AiFillCaretDown />
           </div>
@@ -188,7 +192,7 @@ const Copyright = (props) => {
           <p className="font-semibold mb-3">
             این وبسایت صرفا جنبه نمایشی دارد و برای رزومه کاری استفاده می شود
           </p>
-          <p className="leading-7">
+          <p className="leading-7 text-gray-600 mb-2 sm:mb-0 text-sm ">
             آیکون ها و لوگوهای روبرو هیچ گونه صحت قانونی ندارند و صرفا برای
             نمایش و ارائه می باشند تا قالب وبسایت تکمیل به نظر برسد
           </p>

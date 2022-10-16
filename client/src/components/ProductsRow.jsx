@@ -3,12 +3,10 @@ import Product from "./Product";
 import { products } from "../dataV2";
 import "../index.css";
 
-// overflow-auto  w-80 mx-auto pb-5 sm:mx-0 sm:w-full sm:pb-0 gap-14 flex justify-between mt-3
-
 const ProductsRow = (props) => {
   return (
     <div
-      className={`gap-14 sm:gap-5 md:gap-10 mb-12 justify-between sm:justify-center overflow-auto  w-full mx-auto pb-5 sm:mx-0 sm:w-full sm:pb-0  flex  mt-3`}
+      className={`gap-14 sm:gap-5 md:gap-10 mb-12 justify-between overflow-auto  w-full mx-auto pb-5 sm:mx-0  sm:pb-0  flex  mt-3`}
     >
       {props.data.map((product) => (
         <Product

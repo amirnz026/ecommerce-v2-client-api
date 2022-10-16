@@ -27,7 +27,7 @@ const listClass =
 const Categories = () => {
   return (
     // justify center => between
-    <ul className="overflow-auto w-80 mx-auto pb-5 sm:mx-0 sm:w-full sm:pb-0 gap-14 flex justify-between mt-3">
+    <ul className="overflow-auto w-80 mx-auto pb-5 sm:mx-0 sm:w-full xl:justify-center xl:gap-[120px] sm:pb-0 gap-14 flex justify-between mt-3">
       <li className={listClass}>
         <img src={mobile} alt="mobile" className={imgClass} />
         <p className="text-sm">گوشی موبایل</p>
